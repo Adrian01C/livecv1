@@ -98,3 +98,63 @@ h1, h2 {
 .button-large:hover {
   background-color: #E3111A;
 }
+
+/* Stiluri de bază pentru întreaga pagină */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Stiluri pentru header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header h2 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+/* Stiluri pentru secțiuni */
+section {
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2, section h3 {
+  margin-top: 0;
+}
+
+/* Stiluri pentru logo-uri */
+.connect-logo {
+  width: 80px;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+/* Stiluri pentru link-uri */
+a {
+  text-decoration: none;
+  color: #007BFF;
+} /* Aici lipsea acolada de închidere */
+
+a:hover {
+  text-decoration: underline;
+}
+}

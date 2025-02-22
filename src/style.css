@@ -83,7 +83,7 @@ header, footer {
 }
 
 h1, h2 {
-  color: #0078FF;
+  color: white;
 }
 
 .button-large {
@@ -142,7 +142,7 @@ section h2, section h3 {
 
 /* Stiluri pentru logo-uri */
 .connect-logo {
-  width: 80px;
+  width: 300px;
   height: auto;
   vertical-align: middle;
   margin-right: 8px;
@@ -152,9 +152,65 @@ section h2, section h3 {
 a {
   text-decoration: none;
   color: #007BFF;
-} /* Aici lipsea acolada de închidere */
+}
 
 a:hover {
   text-decoration: underline;
 }
+
+/* Stiluri pentru iconițe de social media */
+.social-icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  background-size: cover;
+  transition: filter 0.3s;
+}
+
+.social-icons-list {
+  list-style: none; /* Elimină punctele listă */
+  padding: 0; /* Elimină padding-ul implicit */
+  display: flex; /* Folosește flexbox pentru a alinia orizontal iconițele */
+  gap: 20px; /* Adaugă spațiu între iconițe */
+}
+
+.twitter img {
+  filter: brightness(1);
+}
+
+.linkedin img {
+  filter: brightness(1);
+}
+
+.social-icon:hover img {
+  filter: brightness(1.5); /* Ajustează efectul de hover aici */
+}
+
+/* Media query for tablet mode */
+@media (max-width: 768px) {
+  .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .connect-logo {
+      width: 50px; /* Adjust the size as needed */
+      margin: 10px; /* Adjust spacing as needed */
+  }
+
+  .social-icon {
+      margin: 5px; /* Adjust spacing as needed */
+  }
+
+  /* Additional styles for better responsiveness */
+  .blue {
+      text-align: center;
+  }
+
+  ul {
+      padding: 0;
+      list-style: none;
+  }
 }

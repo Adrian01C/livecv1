@@ -1,0 +1,19 @@
+# livecv
+
+## Description
+A brief description of your project. Explain what it does, why you created it, and any unique features or aspects.
+
+## Installation
+Instructions on how to set up the project locally. Include any necessary dependencies and commands.
+
+### Prerequisites
+List any prerequisites or software required to run the project. For example:
+- Node.js
+- npm
+
+### Installation Steps
+Step-by-step instructions:
+```bash
+git clone https://github.com/your-username/your-project.git
+cd your-project
+npm install

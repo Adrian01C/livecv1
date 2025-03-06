@@ -1,4 +1,4 @@
-/* Color styles */
+/* Culori */
 .blue { color: #0078FF; }
 .teal-blue { color: #00CAFF; }
 .green { color: #00DE51; }
@@ -16,16 +16,15 @@
 .black { color: #000000; }
 .white { color: #FFFFFF; }
 
-/* General styles */
+/* Alte stiluri */
 body {
   font-family: Arial, sans-serif;
   background-color: #F7F7F7;
   color: #212734;
   line-height: 1.6;
-  margin: 10px;
+  margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
+  text-align: center;
 }
 
 header, footer {
@@ -43,6 +42,17 @@ header, footer {
 
 h1, h2 {
   color: white;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 10px;
 }
 
 .button-large {
@@ -53,43 +63,24 @@ h1, h2 {
   color: #FFFFFF;
   cursor: pointer;
 }
-
 .button-large:hover {
   background-color: #E3111A;
 }
 
-/* Header styles */
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 2.5em;
-}
-
-header h2 {
-  margin: 0;
-  font-size: 1.5em;
-}
-
-/* Section styles */
 section {
   padding: 20px;
   margin: 20px 0;
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 section h2, section h3 {
   margin-top: 0;
+  text-align: center;
 }
 
-/* Logo styles */
 .connect-logo {
   width: 300px;
   height: auto;
@@ -97,70 +88,41 @@ section h2, section h3 {
   margin-right: 8px;
 }
 
-/* Link styles */
 a {
   text-decoration: none;
   color: #007BFF;
 }
-
 a:hover {
   text-decoration: underline;
 }
 
-/* Social media icon styles */
-.social-icon {
-  display: inline-block;
+/* Stiluri pentru sectiunea Let's Connect */
+#lets-connect {
+  text-align: center;
+  padding: 20px;
+  background-color: #0078FF;
+  border-radius: 5px;
+}
+
+#lets-connect ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+#lets-connect li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+#lets-connect img {
   width: 50px;
   height: 50px;
-  margin: 10px;
-  background-size: cover;
-  transition: filter 0.3s;
-}
-
-.social-icons-list {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 20px;
-}
-
-.twitter img, .linkedin img {
-  filter: brightness(1);
-}
-
-.social-icon:hover img {
-  filter: brightness(1.5);
-}
-
-/* Tablet mode */
-@media (max-width: 768px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .connect-logo {
-    width: 50px;
-    margin: 10px;
-  }
-
-  .social-icon {
-    margin: 5px;
-  }
-
-  .blue {
-    text-align: center;
-  }
-
-  ul {
-    padding: 0;
-    list-style: none;
-  }
-}
-
-.profile-picture {
-  width: 150px;
-  height: 150px;
   border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+#lets-connect img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
 }
